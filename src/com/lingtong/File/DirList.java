@@ -8,10 +8,10 @@ import java.util.regex.Pattern;
 public class DirList {
 
 	/**
-	 * @param args    ¹ıÂËÌõ¼ş
+	 * @param args    
 	 */
 	public static void main(String[] args) {
-	   File file = new File("F:\\P4\\01±¦±¦ÔÚÏß\\9ÆÚ\\01App\\03Ô´ÂëÀà\\04App_GeTui\\src\\Demo");
+	   File file = new File("F:\\P4\\01ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\\9ï¿½ï¿½\\01App\\03Ô´ï¿½ï¿½ï¿½ï¿½\\04App_GeTui\\src\\Demo");
 	  
 	   String[] list;
 	   if(args.length == 0){
