@@ -1,0 +1,31 @@
+1:package com.lingtong.IO;
+2:
+3:import java.io.BufferedReader;
+4:import java.io.IOException;
+5:import java.io.PrintWriter;
+6:import java.io.StringReader;
+7:
+8:public class FileOutputShortcut {
+9:    public static String file = "FileOutputShortcut.out";
+10:	/**
+11:	 * @param args
+12:	 * @throws IOException 
+13:	 */
+14:	public static void main(String[] args) throws IOException {
+15:          BufferedReader br = new BufferedReader(
+16:        		    new StringReader(BufferedInputFile.read("D:\\ProgramFiles\\MyEclipseWorkspace\\IOTest\\src\\com\\lingtong\\IO\\FileOutputShortcut.java")));
+17:          
+18:          /*简化包装*/
+19:          PrintWriter pw = new PrintWriter(file);
+20:          
+21:          int lineCount = 1;
+22:          
+23:          String s;
+24:          while((s = br.readLine()) != null){
+25:        	  pw.println(lineCount++ +":" +s);
+26:          }
+27:          pw.close();
+28:          System.out.println(BufferedInputFile.read(file));
+29:	}
+30:
+31:}

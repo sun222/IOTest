@@ -23,6 +23,6 @@ public class BufferedInputFile {
 		return sb.toString();
 	 }
      public static void main(String[] args) throws IOException {
-	    System.out.println(read("D:\\a.txt")); 	
+	    System.out.println(read("D:\\ProgramFiles\\MyEclipseWorkspace\\IOTest\\src\\com\\lingtong\\IO\\BufferedInputFile.java")); 	
 	}
 }
