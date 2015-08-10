@@ -27,7 +27,7 @@ public class BufferToText {
 		
 		//Decode using this system's default Charset.
 		buff.rewind();       //返回到数据开始部分
-		String encoding = System.getProperty("file.encoding");
+		String encoding = System.getProperty("file.encoding");    
 		System.out.println("Decoded using "+encoding+":"+Charset.forName(encoding).decode(buff));
 		
 		//Use a CharBuffer to write through:
